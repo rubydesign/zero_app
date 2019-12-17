@@ -9,6 +9,10 @@ gem "duktape"
 
 gem 'high_voltage'
 gem "haml"
+gem "i2c"
+gem "concurrent-ruby"
+gem 'vuejs-rails'
+gem "pry-rails"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

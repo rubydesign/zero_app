@@ -58,6 +58,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    coderay (1.1.2)
     concurrent-ruby (1.1.5)
     crass (1.0.5)
     duktape (2.3.0.0)
@@ -72,6 +73,7 @@ GEM
     high_voltage (3.1.2)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
+    i2c (0.4.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -92,6 +94,11 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     public_suffix (4.0.1)
     puma (3.12.2)
     rack (2.0.7)
@@ -158,6 +165,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
+    vuejs-rails (2.5.13)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -176,10 +184,13 @@ DEPENDENCIES
   bootsnap
   byebug
   capybara
+  concurrent-ruby
   duktape
   haml
   high_voltage
+  i2c
   listen (>= 3.0.5, < 3.2)
+  pry-rails
   puma
   rails (~> 5.2.4)
   sass-rails
@@ -187,6 +198,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   sqlite3
   uglifier
+  vuejs-rails
   web-console
 
 BUNDLED WITH
